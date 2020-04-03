@@ -10,7 +10,7 @@
             <h6 class="card-text"  id={{i}}>{{quote.description}} </h6><br>
             <p>Author: {{quote.name}}
             Submitter: {{quote.submitter}}</p>
-            <span class=" text-success text-monospace">published : {{quote.completeDate|dateCount}}</span>
+            <span class=" text-success text-monospace">published : {{quote.completeDate|dateCount}} days ago</span>
 
             <button (click)='toggleDetail(i)' class="btn btn-block btn-outline-primary">EXPLORE</button>
 
