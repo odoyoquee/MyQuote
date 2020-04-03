@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Quote } from '../quote';
-
+// import {TimeAgoPipe} from 'time-ago-pipe';
 
 @Component({
   selector: 'app-quote',

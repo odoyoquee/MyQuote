@@ -13,12 +13,12 @@ export class DateCountPipe implements PipeTransform {
         return 'Just now';
       }
       const intervals = {
-        year: 31536000,
-        month: 2592000,
-        week: 604800,
-        day: 86400,
-        hour: 3600,
-        minute: 60,
+        // year: 31536000,
+        // month: 2592000,
+        // week: 604800,
+        // day: 86400,
+        hour: 360000000,
+        minute: 30000000,
         second: 1
       };
       let counter;
@@ -26,7 +26,7 @@ export class DateCountPipe implements PipeTransform {
         counter = Math.floor(seconds / intervals[i]);
         if (counter > 0) {
           if (counter === 1) {
-            return counter + ' ' + i + ' ago'; // singular (1 day ago)
+            return counter + ' ' + i + ' ago '; // singular (1 day ago)
           } else {
             return counter + ' ' + i + 's ago'; // plural (2 days ago)
           }
