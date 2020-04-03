@@ -17,5 +17,8 @@
  - Commit your changes (git commit -am 'Improve feature')
  - Push to the branch (git push origin improve-feature)
  - Create a Pull Request
+
+## Contact information.
+ - Email: odoyograce23@gmail.com
 ## Live link
 https://odoyoquee.github.io/MyQuote/
