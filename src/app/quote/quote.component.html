@@ -1,0 +1,34 @@
+<div class="container-fluid text-center text-warning">
+  <h1 class="bg-dark text-light">Famous QUOTES.</h1>
+  <hr>
+
+  <div class="row text-center">
+    <div class="col-md-6">
+      <div *ngFor='let quote of quotes;let i = index' class="card bg-outline-dark bg-transparent text-light">
+        <div >
+          <figure class="card-body">
+            <h6 class="card-text"  id={{i}}>{{quote.description}} </h6><br>
+            <p>Author: {{quote.name}}
+            Submitter: {{quote.submitter}}</p>
+            <span class=" text-success text-monospace">published : {{quote.completeDate|dateCount}}</span>
+
+            <button (click)='toggleDetail(i)' class="btn btn-block btn-outline-primary">EXPLORE</button>
+
+          </figure>
+        </div><br>
+
+        <div class="text-center">
+          <div *ngIf='quote.showDescription'>
+            <app-quote-details  [quote]='quotes' (isComplete) = 'deleteQuote($event,i)'></app-quote-details>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6" id="top">
+      <div class="card bg-outline-dark bg-transparent text-light">
+        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+      </div>
+    </div>
+  </div>
+
+</div>

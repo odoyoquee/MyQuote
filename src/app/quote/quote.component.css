@@ -1,0 +1,7 @@
+.card{
+  padding: 10px;
+  margin: 10px;
+}
+.bg-outline-dark{
+  border: darkgray solid 2px ;
+}

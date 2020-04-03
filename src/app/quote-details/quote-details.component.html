@@ -1,0 +1,28 @@
+<div class="col-md-12">
+  <div class="row">
+    <figure class="col-md-4">
+      <h3 class="text-capitalize text-monospace text-success">
+        <span class="badge badge-success"><span class="text-muted font-weight-bold">Upvotes</span> :{{uvotes}}</span>
+      </h3>
+    </figure>
+    <figure class="col-md-4">
+      <h3 class="text-capitalize text-monospace text-secondary">
+        <span class="badge badge-warning"><span class="text-muted font-weight-bold">Downvotes</span> :{{dvotes}}</span>
+      </h3>
+    </figure>
+  </div>
+</div>
+
+<div class="col-md-12">
+  <div class="row">
+    <figure class="col-md-4">
+      <button class=" col-md-12 btn btn-success" (click)="upVote()">upvote<i class="fa fa-thumbs-up"></i></button>
+    </figure>
+    <figure class="col-md-4"><button class="col-md-12 btn btn-warning" (click)="downVote()">downvote<i
+          class="fa fa-thumbs-down"></i></button></figure>
+    <figure class="col-md-4"><button class="col-md-12 btn btn-danger " (click)='quoteDelete(true)'>Delete</button>
+    </figure>
+
+
+  </div>
+</div>
